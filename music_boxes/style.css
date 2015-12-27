@@ -9,12 +9,25 @@ p {
 	text-align: center;
 }
 
+.title {
+	font-family: raleway;
+	font-size: 22px;
+	text-align: center;
+}
+
 .img {
-	margin-left: 35px;
+	margin-left: 36px;
+}
+
+/*background image*/
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 #instrument {
-    height: 116px;
+    height: 316px;
     width: 812px;
     padding-right: 10px;
     padding-top: 50px;
@@ -128,4 +141,125 @@ p {
 #b:active {
     background-color:#db1d2d;   
 }
+
+
+
+/*mute controls*/
+
+.mute-box {
+    width: 100px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float:left;
+}
+
+.muteimg {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-right: auto;
+	margin-left: 42px;
+}
+
+#cmute {
+    background-color: #3e181b;
+    border: 3px solid #db1d2d;
+}
+
+#dmute {
+    background-color: #422018;
+    border: 3px solid #f0421c;
+}
+
+#emute {
+    background-color: #45391b;
+    border: 3px solid #fec02d;
+}
+
+#fmute {
+    background-color: #193c29;
+    border: 3px solid #20d071;
+}
+
+#gmute {
+    background-color: #18323e;
+    border: 3px solid #1a9ddb;
+}
+
+#amute {
+    background-color: #331f35;
+    border: 3px solid #a13fad;
+} 
+
+#bmute {
+    background-color: #43293d;
+    border: 3px solid #f26fd4;
+}
+
+#cmute:hover {
+    background-color:#661920;
+    cursor: pointer;
+}
+
+#dmute:hover {
+	background-color:#6e2819;
+	cursor: pointer;
+}
+
+#emute:hover {
+	background-color:#735b20;
+	cursor: pointer;
+}
+
+#fmute:hover {
+	background-color:#1b613b;
+	cursor: pointer;
+}
+
+#gmute:hover {
+	background-color:#184d65;
+	cursor: pointer;
+}
+
+#amute:hover {
+	background-color:#4e2753;
+	cursor: pointer;
+}
+
+#bmute:hover {
+	background-color:#6f3a62;
+	cursor: pointer;
+}
+
+#cmute:active {
+    background-color:#db1d2d;   
+}
+
+#dmute:active {
+    background-color:#db1d2d;   
+}
+
+#emute:active {
+    background-color:#db1d2d;   
+}
+
+#fmute:active {
+    background-color:#db1d2d;   
+}
+
+#gmute:active {
+    background-color:#db1d2d;   
+}
+
+#amute:active {
+    background-color:#db1d2d;   
+}
+
+#bmute:active {
+    background-color:#db1d2d;   
+}
+
+
+
 

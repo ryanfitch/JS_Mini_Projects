@@ -40,3 +40,39 @@ $('#b').mousedown(function(){
     bNote.currentTime = 0;
     bNote.play();
 });
+
+
+$('#cmute').mousedown(function(){
+    cNote.currentTime = 0;
+    cNote.pause();
+});
+
+$('#dmute').mousedown(function(){
+    dNote.currentTime = 0;
+    dNote.pause();
+});
+
+$('#emute').mousedown(function(){
+    eNote.currentTime = 0;
+    eNote.pause();
+});
+
+$('#fmute').mousedown(function(){
+    fNote.currentTime = 0;
+    fNote.pause();
+});
+
+$('#gmute').mousedown(function(){
+    gNote.currentTime = 0;
+    gNote.pause();
+});
+
+$('#amute').mousedown(function(){
+    aNote.currentTime = 0;
+    aNote.pause();
+});
+
+$('#bmute').mousedown(function(){
+    bNote.currentTime = 0;
+    bNote.pause();
+});
