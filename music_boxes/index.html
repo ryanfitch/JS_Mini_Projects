@@ -22,6 +22,10 @@
 
 <body>
 
+	<div class="parkPic">
+		<img src="cityPic.jpg">
+	</div>
+
 	<audio id="cAudio">
 		<source src="theBand/antonioSanchez.mp3" type="audio/mpeg"></source>
     	<!-- <source src="static/media/c_note.ogg" type="audio/ogg"></source>
@@ -38,14 +42,14 @@
         <source src="static/media/e_note.wav" type="audio/wav"></source> -->   
     </audio>
     <audio id="fAudio">
-        <source src="static/media/f_note.mp3" type="audio/mpeg"></source>
-        <source src="static/media/f_note.ogg" type="audio/ogg"></source>
-        <source src="static/media/f_note.wav" type="audio/wav"></source>   
+        <source src="theBand/jayZ.mp3" type="audio/mpeg"></source>
+        <!-- <source src="static/media/f_note.ogg" type="audio/ogg"></source>
+        <source src="static/media/f_note.wav" type="audio/wav"></source> -->   
     </audio>
     <audio id="gAudio">
-        <source src="static/media/g_note.mp3" type="audio/mpeg"></source>
-        <source src="static/media/g_note.ogg" type="audio/ogg"></source>
-        <source src="static/media/g_note.wav" type="audio/wav"></source>   
+        <source src="theBand/park.mp3" type="audio/mpeg"></source>
+        <!-- <source src="static/media/g_note.ogg" type="audio/ogg"></source>
+        <source src="static/media/g_note.wav" type="audio/wav"></source>  -->  
     </audio>
     <audio id="aAudio">
         <source src="static/media/a_note.mp3" type="audio/mpeg"></source>
@@ -61,21 +65,39 @@
 	<div id="instrument">
 	<div id="c" class="box">
 		<p>Antonio Sanchez</p>
-		<img src="theBand/antonioPic.png" alt="Antonio Sanchez Picture" style="width:28px;">
+		<div class="img">
+			<img src="theBand/antonioPic.png" alt="Antonio Sanchez Picture" style="width:28px;">
+		</div>
 	</div>
 
 	<div id="d" class="box">
 		<p>Brian<br>Eno</p>
-		<img src="theBand/enoPic.png" alt="Brian Eno Picture" style="width:28px;">
+		<div class="img">
+			<img src="theBand/enoPic.png" alt="Brian Eno Picture" style="width:28px;">
+		</div>
 	</div>
 
 	<div id="e" class="box">
 		<p>Jimmy<br>Page</p>
-		<img src="theBand/pagePic.png" alt="Jimmy Page Picture" style="width:28px;">
+		<div class="img">
+			<img src="theBand/pagePic.png" alt="Jimmy Page Picture" style="width:28px;">
+		</div>
 	</div>
 
-	<div id="f" class="box"></div>
-	<div id="g" class="box"></div>
+	<div id="f" class="box">
+		<p>Jay-Z</p><br>
+		<div class="img">
+			<img src="theBand/jayzPic.png" alt="Jay-Z Picture" style="width:28px;">
+		</div>
+	</div>
+
+	<div id="g" class="box">
+		<p>NYC<br>Ambience</p>
+		<div class="img">
+			<img src="theBand/nyc.png" alt="Central Park Picture" style="width:28px;">
+		</div>
+	</div>
+
 	<div id="a" class="box"></div>
 	<div id="b" class="box"></div>
 

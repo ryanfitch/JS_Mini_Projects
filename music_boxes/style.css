@@ -9,6 +9,10 @@ p {
 	text-align: center;
 }
 
+.img {
+	margin-left: 35px;
+}
+
 #instrument {
     height: 116px;
     width: 812px;
