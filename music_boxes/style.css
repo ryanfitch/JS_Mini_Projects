@@ -3,6 +3,12 @@ body {
     background-color: black;   
 }
 
+p {
+	font-family: raleway;
+	font-size: 14px;
+	text-align: center;
+}
+
 #instrument {
     height: 116px;
     width: 812px;

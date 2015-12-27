@@ -10,10 +10,10 @@
         var staticurl = "{{&static_url}}"; //base path to your static files /static/apps/yourapp
     </script>
     <link href="/static/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
-    <script src="/static/common/js/jquery.min.js"></script>
+    <script src="static/common/js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/static/common/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/static/apps/coderlib/js/index.js"></script>
+    <script src="static/common/ace-min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="static/apps/coderlib/js/index.js"></script>
     <script>
         Coder.addBasicNav();
     </script>
@@ -23,19 +23,19 @@
 <body>
 
 	<audio id="cAudio">
-		<source src="static/media/c_note.mp3" type="audio/mpeg"></source>
-    	<source src="static/media/c_note.ogg" type="audio/ogg"></source>
-    	<source src="static/media/c_note.wav" type="audio/wav"></source>
+		<source src="theBand/antonioSanchez.mp3" type="audio/mpeg"></source>
+    	<!-- <source src="static/media/c_note.ogg" type="audio/ogg"></source>
+    	<source src="static/media/c_note.wav" type="audio/wav"></source> -->
 	</audio>
 	<audio id="dAudio">
-        <source src="static/media/d_note.mp3" type="audio/mpeg"></source>
-        <source src="static/media/d_note.ogg" type="audio/ogg"></source>
-        <source src="static/media/d_note.wav" type="audio/wav"></source>   
+        <source src="theBand/brianEno.mp3" type="audio/mpeg"></source>
+        <!-- <source src="static/media/d_note.ogg" type="audio/ogg"></source>
+        <source src="static/media/d_note.wav" type="audio/wav"></source>   --> 
     </audio> 
     <audio id="eAudio">
-        <source src="static/media/e_note.mp3" type="audio/mpeg"></source>
-        <source src="static/media/e_note.ogg" type="audio/ogg"></source>
-        <source src="static/media/e_note.wav" type="audio/wav"></source>   
+        <source src="theBand/jimmyPage.mp3" type="audio/mpeg"></source>
+        <!-- <source src="static/media/e_note.ogg" type="audio/ogg"></source>
+        <source src="static/media/e_note.wav" type="audio/wav"></source> -->   
     </audio>
     <audio id="fAudio">
         <source src="static/media/f_note.mp3" type="audio/mpeg"></source>
@@ -59,9 +59,21 @@
     </audio>
 
 	<div id="instrument">
-	<div id="c" class="box"></div>
-	<div id="d" class="box"></div>
-	<div id="e" class="box"></div>
+	<div id="c" class="box">
+		<p>Antonio Sanchez</p>
+		<img src="theBand/antonioPic.png" alt="Antonio Sanchez Picture" style="width:28px;">
+	</div>
+
+	<div id="d" class="box">
+		<p>Brian<br>Eno</p>
+		<img src="theBand/enoPic.png" alt="Brian Eno Picture" style="width:28px;">
+	</div>
+
+	<div id="e" class="box">
+		<p>Jimmy<br>Page</p>
+		<img src="theBand/pagePic.png" alt="Jimmy Page Picture" style="width:28px;">
+	</div>
+
 	<div id="f" class="box"></div>
 	<div id="g" class="box"></div>
 	<div id="a" class="box"></div>
