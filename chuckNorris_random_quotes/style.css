@@ -1,0 +1,23 @@
+body {
+	color: white;
+	background-color: #4d4d4d;
+	font-family: raleway;
+	text-align: center;
+}
+
+button {
+	font-size: 16px;
+	margin: 50px;
+}
+
+#jokes {
+	font-size: 20px;
+	padding: 10px 10px;
+	background-color: #7d7d7d;
+	margin: 50px 200px;
+	border-radius: 10px;
+}
+
+.disclaimer {
+	font-size: 8px;
+}
