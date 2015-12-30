@@ -11,4 +11,4 @@ function palindrome(str) {
 }
 
 palindrome("racecar");
-//true
+//returns true because it is a palindrome.
