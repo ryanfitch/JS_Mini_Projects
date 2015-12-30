@@ -1,6 +1,6 @@
 // Fizzbuzz! is a program that prints the numbers from 1 to n... 
-// but for multiples of x print F, for multiples of y print B, 
-// and multiples of x & y print FB.
+// but for multiples of x it prints F, for multiples of y it prints B, 
+// and for multiples of x & y it prints FB.
 
 var key = "";
 
