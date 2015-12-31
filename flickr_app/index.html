@@ -10,19 +10,29 @@
   <script src="js/flickr.js"></script>
 </head>
 <body>
+  <div class="weatherBody">
+    <div id="subtitle">Fresh Portland Weather & Pics!</div>
+    <div id="subtitle2">Fresh Current Weather</div>
+    <div id="iconTemp">
+      <div id="icon"></div>
+      <div id="temp"></div>
+    </div>  
 
-  <div id="weather">
-    <h1 id="tempText">Current Temperature: <span id="temperature"></span>&deg;</h1>
+    <div id="weatherWrapper">
+      <div class="location details"></div>
+      <div id="conditions" class="details"></div>
+      <div id="wind" class="details"></div>
+      <div id="postal"></div>
+    </div>  
   </div>
-
 
   <div class="grid-container centered">
     <div class="grid-100">
       <div class="contained">
         <div class="grid-100">
           <div class="heading">
-            <h1>Flickr Photo Feeder</h1>
-            <p>Choose which kind of pics you'd like to return photos of...</p>
+            <h1>Fresh Flickr Photo Feeder</h1>
+            <p>Choose which kind of Portland pics you'd like to return photos of...</p>
           </div>
           <ul class="filter-select">
             <li><button>Downtown Portland</button></li>

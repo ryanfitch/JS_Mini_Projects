@@ -1,26 +1,95 @@
-#weather {
-  background: #edeff0;
+.weatherBody {
   font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  background: white;
-  padding: 30px 15px;
-  margin-bottom: 30px;
-  margin-left: 9%;
-  margin-right: 9%;
-  position: relative;
-  overflow: hidden;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.6em;
+  background: url("http://traveloregon.com/content/uploads/2011/11/tocomshomehood_2000x700-2000x1200.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 20px;
+  padding: 30px 15px 30px 15px;
+  border-radius: 30px;
+  border: solid #4d4d4d 1px;
+  margin-top: -40px;
 }
 
 #tempText {
   padding-left: 12px;
+}
+
+#icon, #temp, .location, #conditions, #wind{
+  display: inline-block;
+  margin: auto;
+}
+
+img{
+  vertical-align: middle;
+}
+
+#icon{
+  position: relative;
+  bottom: 5px;
+}
+
+#subtitle{
+  font-size: 4em;
+  font: underline;
+  text-align: center;
+  margin-bottom: 3%;
+  color: white;
+  text-shadow: 0 0 0.2em #333;
+}
+
+#subtitle2{
+  font-size: 2.5em;
+  font: underline;
+  text-align: center;
+  margin-bottom: 2%;
+  color: white;
+  text-shadow: 0 0 0.2em #333;
+}
+
+#iconTemp {
+  vertical-align: middle;
+}
+
+#temp{
+  font-size: 4em;
+  font-weight: bold;
+  padding-bottom: 2%;
+  color: #ffffff;
+  text-shadow: 0 0 0.5em #333;
+}
+
+/*.location, #conditions, #wind{
+  display: inline-block;
+}*/
+
+.details{
+  border: 2px solid #ffffff;
+  color: #7F3320;
+  padding: 2% 1% 2% 1%;
+  margin: 0 auto 0.7% auto; 
+  background-color: #ffffff;
+  border-radius: 0.3em;
+  box-shadow: .2em .2em .2em #444;
+  opacity: 0.8;
+}
+
+#postal {
+  font-size: 4em;
+  font-weight: bold;
+  padding-top: 3%;
+  color: #ffffff;
+  text-shadow: 0 0 0.2em #333;
+}
+
+button{
+  margin-top: 3%;
+  font-size: 1.15em;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.2em;
+  background-color: #7F3320;
+  color: #ffffff;
+  padding: 0.5%;
 }
 
 
