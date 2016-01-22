@@ -8,4 +8,5 @@ Languages and frameworks used include:
 * JavaScript
 * jQuery
 * AJAX and JSON
+* API's
 
