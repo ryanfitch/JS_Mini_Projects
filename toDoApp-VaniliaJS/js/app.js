@@ -7,13 +7,20 @@ var incompleteTasksHolder = document.getElementById("incomplete-tasks");
 var completedTasksHolder= document.getElementById("completed-tasks");
 
 //New task list item
-var createNewTaskElement = fuction(taskString) {
+var createNewTaskElement = function(taskString) {
     var listItem = document.createElement("li");
     var checkBox = document.createElement("input");
     var label = document.createElement("label");
     var editInput = document.createElement("input");
     var editButton = document.createElement("button");
     var deleteButton = document.createElement("button");
+
+    listItem.appendChild(checkBox);
+    listItem.appendChild(label);
+    listItem.appendChild(editInput);
+    listItem.appendChild(editButton);
+    listItem.appendChild(deleteButton);
+
     return listItem;
 }
 
@@ -21,6 +28,8 @@ var createNewTaskElement = fuction(taskString) {
 var addTask = function () {
     console.log("add task...");
     var listItem = createNewTaskElement("Some New Task");
+    incompleteTasksHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskCompleted);
 }
 
 var editTask = function () {
@@ -28,15 +37,27 @@ var editTask = function () {
 }
 
 var deleteTask = function () {
-    console.log("hello");
+    console.log("deleting...");
+    var listItem = this.parentNode;
+    var ul = listItem.parentNode;
+
+    //Remove the parent list item from the ul
+    ul.removeChild(listItem);
 }
 
+
 var taskCompleted = function () {
-    console.log("hello");
+    console.log("Task complete...");
+    var listItem = this.parentNode;
+    completedTasksHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskIncomplete);
 }
 
 var taskIncomplete = function () {
-    console.log("hello");
+    console.log("Task incomplete...");
+    var listItem = this.parentNode;
+    incompleteTasksHolder.appendChild(listItem);
+    bindTaskEvents(listItem, taskCompleted);
 }
 
 var bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
