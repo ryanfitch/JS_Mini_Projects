@@ -1,3 +1,5 @@
+console.log("Welcome to my calculator!");
+
 var calculator = {
 		sum: 0,
 		add: function(value) {
@@ -12,10 +14,10 @@ var calculator = {
                             subtract: function(value) {
                                 this.sum -= value;
                             },
-                            multiply: function() {
+                            multiply: function(value) {
                                 this.sum *= value;
                             },
-                            divide: function() {
-                                this.sum /= value;
+                            divide: function(value) {
+                                this.sum = this.sum/value;
                             }
 };
