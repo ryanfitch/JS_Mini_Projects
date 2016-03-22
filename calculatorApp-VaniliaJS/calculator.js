@@ -4,7 +4,7 @@ var calculator = {
                                 this.sum += value;
     },
     clear: function() {
-
+        this.sum = 0;
     }, 
     equals: function() {
 
