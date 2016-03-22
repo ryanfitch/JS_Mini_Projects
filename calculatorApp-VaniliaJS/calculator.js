@@ -14,5 +14,8 @@ var calculator = {
                             },
                             multiply: function() {
                                 this.sum *= value;
+                            },
+                            divide: function() {
+                                this.sum /= value;
                             }
 };
