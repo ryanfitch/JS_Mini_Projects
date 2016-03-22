@@ -18,6 +18,6 @@ var calculator = {
                                 this.sum *= value;
                             },
                             divide: function(value) {
-                                this.sum = this.sum/value;
+                                this.sum /= value;
                             }
 };
