@@ -5,11 +5,14 @@ var calculator = {
                             },
                             clear: function() {
                                 this.sum = 0;
-                            }, 
+                            },
                             equals: function() {
                                 return this.sum;
                             },
                             subtract: function(value) {
                                 this.sum -= value;
+                            },
+                            multiply: function() {
+                                this.sum *= value;
                             }
-}
+};
