@@ -7,6 +7,6 @@ var calculator = {
         this.sum = 0;
     }, 
     equals: function() {
-
+        return this.sum;
     }
 }
