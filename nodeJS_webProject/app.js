@@ -3,14 +3,14 @@
 
 // 1- create a web server
 
-var http = require('http');
+var http = require("http");
 
-http.createServer(function (request, response) {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    resquest.end('Hello World\n');
-}).listen(1337, '127.0.0.1');
-
-console.log('Server running at http://127.0.0.1:1337/');
+http.createServer(function(request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.write("It's alive!");
+  response.end();
+}).listen(3000);
+console.log('Server running at 3000');
 
 // 2- Handle HTTP route Get / Post
         //if URL === "/" && "get"
