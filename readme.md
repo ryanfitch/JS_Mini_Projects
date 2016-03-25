@@ -9,4 +9,5 @@ Languages and frameworks used include:
 * jQuery
 * AJAX and JSON
 * API's
+* Node.JS 
 
