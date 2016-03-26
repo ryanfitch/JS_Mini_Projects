@@ -1,13 +1,25 @@
 var Profile = require("./profile.js");
 var renderer = require("./renderer.js");
+var querystring = require("querystring");
+
+var commonHeaders = {"Content-Type": "text/html"};
 
 function home(request, response) {
         if (request.url === "/") {
-        response.writeHead(200, {"Content-Type": "text/plain"});
-        renderer.view("header", {}, response);
-        response.write("Search\n");
-        response.end("Footer\n");
-        response.end();
+            if (request.method.toLowerCase() === "get") {
+                response.writeHead(200, commonHeaders);
+                renderer.view("header", {}, response);
+                renderer.view("search", {}, response);
+                renderer.view("footer", {}, response);
+                response.end();
+            } else {
+                request.on("data", function(postBody) {
+                    console.log(postBody.toString());
+                    var query = querystring.parse(postBody.toString());
+                    response.writeHead(303, {"Location": "/" + query.username});
+                    response.end();
+                });
+            }
         }
 }
 
@@ -16,7 +28,7 @@ function home(request, response) {
 function user(request, response) {
     var username = request.url.replace("/", "");
     if (username.length > 0) {
-        response.writeHead(200, {"Content-Type": "text/plain"});
+        response.writeHead(200, commonHeaders);
         renderer.view("header", {}, response);
 
         // Get json from API
